@@ -1,38 +1,34 @@
+* {margin:0; padding:0; color:#fff;}
 .App {
+  background-color:#172830;
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
+.ly-main {display:flex; position:relative; justify-content:center; align-items: center; flex-direction: column; height:100vh; z-index:999;}
+.ly-main h1 {display:block; margin-bottom:20px; font-size:1.2em; color:#fff;}
+.ly-main h1 p {font-style:italic; font-size:2.2em; color:#de5082;}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
+.ly-contents {display:flex; position:relative; justify-content:center; align-items: center; flex-direction: column; height:100vh;}
+.box-contents {position:relative; z-index:999;}
+.box-contents dl dt {font-size:2em; color:#de5082;}
+.box-contents dl dd {padding:10px;}
+.ly-contents .bg-main {opacity:0.2;}
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
+.wrap-form {margin-bottom:30px;}
+.wrap-form p {color:#867bb3;}
 
-.App-link {
-  color: #61dafb;
-}
+.wrap-share .btn-share {margin:10px 0;}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
+
+.bg-main {position:absolute; top:0; left:0; width:100%; height:100vh; background-color:#172830; background:url(../public/img/img_mainbg.jpg)no-repeat 0 0; background-size:cover;}
+.bg-main img {height:100%;}
+
+.pageDetail {background-color:#172830;}
+
+
+/* common contents */
+.btn-basic {width:200px; height:60px; border:1px solid #de5082; border-radius:20px; background-color:rgba(0,0,0,0.5); color:#fff;}
+.btn-basic:hover {background-color:rgba(222,80,130,0.8);}
+.input-basic {width:200px; height:40px; padding:5px 10px; box-sizing:border-box; border:1px solid #4e4749; background-color:#0e181d;}
+.btn-share {display:block; width:200px; height:36px; line-height:36px; border-radius:20px; background-color:rgba(134,124,179,0.5); text-decoration:none;}
+.btn-share:hover {background-color:#695c9b;}
