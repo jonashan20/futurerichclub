@@ -1,0 +1,37 @@
+{ "all":[
+    {
+      "num": "1",
+      "question": "주인공의 성씨는?",
+      "choices": [
+        { "num" : "a",
+          "desc": "문씨"},
+        { "num" : "b",
+          "desc": "뭉씨"}
+      ]
+    },
+    {
+      "num": "2",
+      "question": "주인공의 이름은?",
+      "choices": [
+        { "num" : "a",
+        "desc": "동금"},
+        { "num" : "b",
+        "desc": "똥금"},
+        { "num" : "c",
+        "desc": "똠꿈"}
+      ]
+    },
+    {
+      "num": "3",
+      "question": "주인공의 고향은?",
+      "choices": [
+        { "num" : "a",
+        "desc": "불가리아"},
+        { "num" : "b",
+        "desc": "소말리아"},
+        { "num" : "c",
+        "desc": "우루과이"}
+      ]
+    }
+  ]
+}

@@ -32,3 +32,6 @@
 .input-basic {width:200px; height:40px; padding:5px 10px; box-sizing:border-box; border:1px solid #4e4749; background-color:#0e181d;}
 .btn-share {display:block; width:200px; height:36px; line-height:36px; border-radius:20px; background-color:rgba(134,124,179,0.5); text-decoration:none;}
 .btn-share:hover {background-color:#695c9b;}
+
+
+.hidden-question { display: hidden}
