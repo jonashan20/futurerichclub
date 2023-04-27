@@ -34,11 +34,11 @@ function Page() {
 
 
           {/* 현재 Question 렌더링 */}        
-          <div><dl><dt>{questions.all[count].num}</dt><dd>{questions.all[count].question}</dd></dl></div>;      
+          <div><dl><dt>{questions.all[count].num}</dt><dd>{questions.all[count].question}</dd></dl></div>   
           
           {/* 현재 카운트 질문에 대한 Choices 렌더링 */}        
           { questions.all[count].choices.map((item) => {                                                
-              return <dl> <dd>{item.num}.{item.desc}</dd></dl>;              
+              return <ul className='list-anwser'> <li><span>{item.num}</span>{item.desc}</li></ul>             
           })}
         
 
@@ -48,13 +48,18 @@ function Page() {
             <p>( * 4글자 )</p>
           </div> */}
 
-          { count < 1 ? null: <button className='btn-basic' onClick={handleBack}>이전으로</button> }
-          {/* <Link to='/Result'> */}
-          <button className='btn-basic' onClick={handleNext}>다음으로</button>
-          {/* </Link> */}
-          <Link to='/Main'>
-            <button className='btn-basic'>다시하기</button>
-          </Link>  
+     
+          <div className='wrap-btn'>
+            {/* <Link to='/Result'> */}
+            <button className='btn-question' onClick={handleNext}>다음으로</button>
+            {/* </Link> */}
+            {/* <Link to='/Main'>
+            <button className='btn-back'>다시하기</button>
+             </Link>   */}
+
+            { count < 1 ? null: <button className='btn-back' onClick={handleBack}>이전으로</button> }
+          </div>
+         
         </div>
      
         <div className='bg-main'>
