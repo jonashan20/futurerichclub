@@ -2,12 +2,27 @@ import React from 'react';
 import './App.css';
 import { Link, useNavigate } from 'react-router-dom';
 import questions from './question.json';
-import { useState} from 'react';
+import { useState, useRef } from 'react';
 
-function Page() {   
+const Page = ()=> {   
 
   const [count, setCount] = useState(0);  //질문 진행 count  
   const navigate  = useNavigate();
+  
+  const countRef = useRef([]);
+
+  const choiceHandler = (selectAlpabet, answerAlpabet) =>  {   
+   
+    console.log(count,'번재 질문');
+
+    countRef.current[count] = selectAlpabet;
+    console.log(countRef.current);
+    
+        
+      
+    
+}
+
 
   const handleBack = () =>  {   
       if (!!questions.all[count-1]){
@@ -38,7 +53,11 @@ function Page() {
           
           {/* 현재 카운트 질문에 대한 Choices 렌더링 */}        
           { questions.all[count].choices.map((item) => {                                                
-              return <ul className='list-anwser'> <li><span>{item.num}</span>{item.desc}</li></ul>             
+              return <ul className='list-anwser'> 
+              <button className= {item.num === countRef.current[count]? 'btn-back':'btn-question'} onClick={ () => choiceHandler(item.num,questions.all[count].answer) }>
+                <span>{item.num}</span>{item.desc}
+              </button>
+                      </ul>             
           })}
         
 

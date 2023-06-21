@@ -16,8 +16,7 @@ function Main() {
          
          
       </div>
-      <div className='bg-main'>
-      </div>
+      <div className='bg-main'></div>
       
     </div>      
   );

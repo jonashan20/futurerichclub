@@ -22,7 +22,7 @@ function App() {    // function App() { <= App이 파일이름과 같아야함
         <Route path='/Page' element={<Page/>}/>
         <Route path='/Result' element={<Result/>}/>
         <Route path='/' element={<Main/>}/>       
-      </Routes> 
+    </Routes> 
   
 
     </div>      
