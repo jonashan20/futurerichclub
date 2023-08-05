@@ -3,6 +3,7 @@ import './App.css';
 import Main from './Main';
 import Result from './Result';
 import Page from './Page';
+import Share from './Share.js';
 // 상단 css,img,other js import 부분으로 모든 js에 필요한 import는 js마다 각각 다 써줘야함
 
 function App() {    // function App() { <= App이 파일이름과 같아야함
@@ -21,6 +22,7 @@ function App() {    // function App() { <= App이 파일이름과 같아야함
         <Route path='/Main' element={<Main/>}/>
         <Route path='/Page' element={<Page/>}/>
         <Route path='/Result' element={<Result/>}/>
+        <Route path='/Share' element={<Share/>}/>
         <Route path='/' element={<Main/>}/>       
     </Routes> 
   
