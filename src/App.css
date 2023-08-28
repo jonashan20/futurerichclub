@@ -37,7 +37,7 @@
 
 .wrap-btn {display:flex; flex-direction: column; margin-top:20px;}
 
-.list-anwser {list-style:none;}
+.list-anwser {display:flex; justify-content: center; list-style:none;}
 .list-anwser li {padding:5px; font-weight:bold;}
 .list-anwser li span {margin-right:10px; color:#867bb3;}
 
