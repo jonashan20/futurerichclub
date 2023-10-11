@@ -3,6 +3,10 @@ import './App.css';
 import Glory from './Glory/GloryMain';
 import GloryPage from './Glory/GloryPage';
 import GloryResult from './Glory/GloryResult';
+import Imsolo16 from './Imsolo16/Imsolo16';
+import Imsolo16Page from './Imsolo16/Imsolo16Page';
+import Imsolo16Result from './Imsolo16/Imsolo16Result';
+
 
 import { Link } from 'react-router-dom';
 // import Result from './Result';
@@ -20,33 +24,27 @@ function App() {    // function App() { <= App이 파일이름과 같아야함
     // ============Root element는 꼭 1개로 열고 =================//
     <BrowserRouter>
     <div className="App">  
-      <div className='ly-main-q'>
-        <h1 className='txt-mtitle'>😃 요즘 핫한 킬링타임 퀴이즈 😃</h1>
-        <div className='main-question'>
-        <Link to="/Glory">
-          <div className='link-question txt-or'>
-            <div className='link-img'></div>
-            [더글로리] 정주행 테스트
-            <p>✅ 당신의 관찰력 검사 ㄱㄱ ✅</p>
-          </div>
-        </Link>
-        <Link to="/Glory"> 
-          <div className='link-question txt-bl'>
-            <div className='link-img'></div>
-            [나는 SOLO] Hot!한 16기에서 일어난 일
-            <p>✅ 나쏠 16기 얼마나 아세요? ✅</p>
-            </div>
-        </Link>
-        <Link to="/Glory">
-          <div className='link-question txt-min'>
-          <div className='link-img'></div>
-            [무한도전] 무도 빠라구요?
-            <p>✅ 이거 모르면 무도키즈 아님ㅋ ✅</p>
-          </div>
-        </Link>
-        </div>
+    <div>  친구들과 함께 하는 심심풀이 퀴즈</div>
+    <div   >
+    <Link to="/Glory">
+       <img src='/img/glory.jpg' width ='150px'/>
+       <div style={{display: 'inline-block', width:'300px' , textAlign: 'center', fontSize: '20px', backgroundColor: '#ff5544'}}>  [글로리] 정주행 테스트!</div></Link>
+    <Link to="/Imsolo16"> 
+      <img src='/img/imsolo.jpg' width ='150px'/>
+      <div style={{display: 'inline-block', width:'300px', textAlign: 'center', fontSize: '20px', backgroundColor: '#64acff'}}>  [나는 SOLO] Hot!하다 16기에서 일어난 일을 알아보자~</div></Link>
+    <Link to="/Glory"><div style={{display: 'inline-block', width:'300px', textAlign: 'center', fontSize: '20px', backgroundColor: '#50e04a'}}> [무한도전] 추억속 그 장면 얼마나 기억하나욨욧?</div></Link>
+    </div>
+    <Routes>
+        <Route path='/Glory' element={<Glory/>}/>   
+        <Route path='/GloryPage' element={<GloryPage/>}/>   
+        <Route path='/GloryResult' element={<GloryResult/>}/>          
+        <Route path='/Imsolo16' element={<Imsolo16/>}/>   
+        <Route path='/Imsolo16Page' element={<Imsolo16Page/>}/>   
+        <Route path='/Imsolo16Result' element={<Imsolo16Result/>}/>                    
+    </Routes> 
+  
 
-      </div>  
+
       <Routes>
           <Route path='/Glory' element={<Glory/>}/>   
           <Route path='/GloryPage' element={<GloryPage/>}/>   
