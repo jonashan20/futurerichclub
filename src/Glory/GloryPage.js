@@ -1,7 +1,7 @@
 import React from 'react';
 import '../App.css';
 import { useNavigate } from 'react-router-dom';
-import questions from '../question.json';
+import questions from './question.json';
 
 import { useState, useRef } from 'react';
 
@@ -65,7 +65,7 @@ const GloryPage = ()=> {
       if (!!questions.all[count-1]){
         setCount(count-1)
       } else {
-        navigate('/Main');     
+        navigate('/Glory');     
       } 
 	}
 

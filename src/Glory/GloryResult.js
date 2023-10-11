@@ -2,9 +2,8 @@ import React from 'react';
 import '../App.css';
 import { Link, useNavigate } from 'react-router-dom';
 import { useLocation } from "react-router-dom";
-import Share from './Share.js';
 import { useState, useEffect } from "react";
-import questions from '../question.json';
+import questions from './question.json';
 
 <script src="https://developers.kakao.com/sdk/js/kakao.js"></script>
 
@@ -20,12 +19,12 @@ function GloryResult() {
   const [showAnswer, setShowAnswer] = useState(false); 
 
   useEffect(()=>{
-    // init 해주기 전에 clean up 을 해준다.
-     //Kakao.cleanup();
+      // init 해주기 전에 clean up 을 해준다.
+      Kakao.cleanup();
       // 자신의 js 키를 넣어준다.
-      //Kakao.init('1d48288a27aaedef97d046118e2b65c4');
+      Kakao.init('1d48288a27aaedef97d046118e2b65c4');
       // 잘 적용되면 true 를 뱉는다.
-      //console.log(Kakao.isInitialized());
+      console.log(Kakao.isInitialized());
   },[]);
 
 
@@ -54,9 +53,7 @@ function GloryResult() {
         },);
    }
 
-  const shareHandler = () =>  {     
-      navigate('/Share');     
-  }
+
   
   const handleShow = () => {
     showAnswer?  setShowAnswer(false) : setShowAnswer(true);
