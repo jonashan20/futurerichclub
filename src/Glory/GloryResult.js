@@ -70,11 +70,11 @@ function GloryResult() {
 
   const resultMsg =() => {
     if (number > 70) {
-        return '꽤 잘 아시네요?'}
+        return '꽤 잘 아네? 🥴'}
     else if( number > 40){ 
-      return '조금만 더 기억을~'}
+      return '기억을 해 기억을! 😠'}
     else { 
-      return '팬 아님! 한번 더 보시길!'}
+      return '보긴 했니? 🤬'}
                        
   }
 
