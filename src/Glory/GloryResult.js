@@ -101,12 +101,15 @@ function GloryResult() {
             {/* <img className="image" alt="instagram" src="img/instagram.webp" /> */}
           </div>
 
-          <Link to='/Glory'>
-            <button className='btn-basic mt20'>다시하기</button>
-          </Link>    
-          <Link to='/Main'>
-            <button className='btn-basic mt20'>다른 퀴즈 하기</button>
-          </Link>    
+          <div className='wrap-btn'>
+            <Link to='/Glory'>
+              <button className='btn-basic mt20'>다시하기</button>
+            </Link>    
+            <Link to='/Main'>
+              <button className='btn-basic mt20'>다른 퀴즈 하기</button>
+            </Link>   
+          </div>
+ 
           <div className='wrap-share'>
             {/* <a className='btn-share' >문제 공유하기</a>
             <a className='btn-share' >결과 공유하기</a> */}
