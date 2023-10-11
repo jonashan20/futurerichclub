@@ -108,9 +108,7 @@ const Imsolo16Page = ()=> {
           </div>
          
         </div>
-     
-        <div className='bg-main'>
-        </div>
+    
                 
       </div>
       

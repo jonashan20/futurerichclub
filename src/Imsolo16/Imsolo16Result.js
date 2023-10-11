@@ -121,9 +121,7 @@ function Imsolo16Result() {
           </div>
 
         </div>
-     
-        <div className='bg-main'>
-        </div>
+    
                 
       </div>
       
