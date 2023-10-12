@@ -25,7 +25,7 @@ function App() {    // function App() { <= App이 파일이름과 같아야함
     <BrowserRouter>
     <div className="App">  
       <div className='ly-main-q'>
-        <h1 className='txt-mtitle'>😃 요즘 핫한 킬링타임 퀴이즈 😃</h1>
+        <h1 className='txt-mtitle mb20'>😃 요즘 핫한 킬링타임 퀴이즈 😃</h1>
           <div className='main-question'>
 
             <Link to="/Glory">

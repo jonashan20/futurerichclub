@@ -10,6 +10,8 @@ a {text-decoration:none;}
 .mt20 {margin-top:20px !important;}
 .mt30 {margin-top:30px !important;}
 
+.mb20 {margin-bottom:20px !important;}
+
 .txt-or {color:tomato;}
 .txt-bl {color:royalblue}
 .txt-min {color: turquoise;}
@@ -119,8 +121,11 @@ a {text-decoration:none;}
   font-size:18px;
   word-break:keep-all;
 }
-.main-question > a:nth-child(even) {
-  background:rgba(255,255,255,0.1);
+.main-question > a:nth-child(2n) {
+  background:rgba(255,255,255,0.08);
+}
+.main-question > a:nth-child(3n) {
+  background:rgba(255,255,255,0.16);
 }
 .main-question > a:hover {
   background:rgba(255,255,255,0.2);
